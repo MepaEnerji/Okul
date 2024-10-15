@@ -1,0 +1,49 @@
+a{
+    text-decoration: dashed;
+    color: white;
+    font-size: 22px;
+    padding-right: 20px;
+}
+#par1{
+    font-style: italic;
+    color: white;
+}
+#div1{
+    background-color: goldenrod;
+    text-align: center;
+}
+#div1 img{
+    width: 200px;
+    height: 50px;
+}
+#div2{
+    background-color: black;
+}
+a:hover{
+    background-color: white;
+    color: black;
+}
+.kapsa{
+    display: flex;
+    flex-wrap: wrap;
+}
+#par2{
+    padding-left: 30px;
+}
+#div3 a{
+    padding-left: 30px;
+    color: red;
+    font-size: 30px;
+}
+#par3{
+    padding-left: 30px;
+}
+#div4 a{
+    padding-left: 30px;
+    color: red;
+    font-size: 30px;
+}
+.kapsa1{
+    display: flex;
+    flex-wrap: wrap;
+}
