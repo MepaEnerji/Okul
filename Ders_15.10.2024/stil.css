@@ -1,0 +1,58 @@
+body{background-color: beige;}
+a{text-decoration: dashed;/*altı çizgiliydi onu kaldırdık*/
+color: black;
+font-size: 2vw;
+border: 2px solid black;/* 2px kalınlığında solid(düz çizgi) oluşturup yeşil renk yaptık*/
+width: 15vw;
+display: inline-block;/*a etiketi block tabanlı olmadığı için boyutunu ayarlayamayız 
+inline-block 1 satırda yan yana dizilmesini sağlıyo
+block yapsaydık alt alta olucaktı*/
+text-align: center;/*yazıları ortalar*/
+}
+a:hover{
+    background-color: blueviolet;/* hover üzerine gelince görünen renk*/
+}
+.k1{
+    border: 2px dashed black;/*dashed kesik çizgi şeklinde border olsun diye*/
+    width: 20vw;
+    text-align: center;/*yazıları ortalamak için*/
+    font-size: 25px;
+    padding: 10px;/*iç tarafta boşluk vermek için*/
+    margin-right: 50px;
+    margin-bottom: 20px;
+    /*dış taraftaki elemanlar arasında boşluk vermek için*/
+    /*float:left; yazıncada oluya ama border çizgileri eşit değil*/
+}
+.k1 img{
+    width: 20vw;
+    height: 10vw;
+}
+.kapsa{
+    display: flex;/*yan yana koyduk resimleri*/
+    flex-wrap: wrap;/*sığmayan altta olsun diye yaptık*/
+}
+
+
+
+
+.k2{
+    width: 20vw;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    margin: 1px;
+    margin-bottom: 5px;
+}
+.k2:hover{
+    background-color: black;
+    color: white;
+}
+.k2 img{
+    width: 20vw;
+    height: 10vw;
+}
+.kapsa1{
+    display:flex;
+    flex-wrap: wrap;
+ }
