@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form name="Giris" action="giris.html" method="get" autocomplete="on">
+        <!--label,buton,textbox,grupbox ve grupbox a başlık ekleme-->
+        <fieldset>
+            <legend>Kişisel bilgiler</legend>
+            <label>Ad:</label><input type="text" placeholder="Adınızı giriniz" tabindex="1"/><br>
+            <label>SoyAd:</label><input type="text" placeholder="Soyadınızı giriniz"/><br>
+            <label>Cinsiyet:</label><input type="radio" name="cins" checked="on"/>Erkek
+            <input type="radio" name="cins"/>Bayan<br>
+            <label>Doğum Tarihi:</label><input type="date"/><br>
+            <label>Doğum Saati:</label><input type="time"/><br>
+            <label>Email:</label><input type="email"/><br>
+            <label>Telefon:</label><input type="tel"/><br>
+            <label>Yaş:</label><input type="Number" min="15" max="130"/><br>
+            <label>Doğum Yeri:</label>
+            <select name="iller" size="1">
+                <option value="34">İstanbul</option>
+                <option value="35">İzmir</option>
+                <option value="36">Kars</option>
+                <option value="37">Kastamonu</option>
+            </select>
+            <input type="submit" value="Gönder"/><br>
+            <input type="reset" value="Temizle"/><br>
+        </fieldset>
+        <fieldset>
+            <legend>Üyelik Bilgileri</legend>
+            <label>Kullanıcı Adı:</label><input type="text" placeholder="Kullanıcı Adınızı giriniz"/><br>
+            <label>Şifre:</label><input type="password" placeholder="Şifrenizi giriniz"/></input><br>
+        </fieldset>
+        <fieldset>
+            <legend>İlgi Alanları</legend>
+            <label>Hobileriniz</label>
+            <input type="checkbox" name="k1"/>Basketbol
+            <input type="checkbox" name="k2"/>Futbol
+            <input type="checkbox" name="k3"/>Beyzbol<br>
+            <input type="checkbox" name="k4"/>Yüzmek
+            <input type="checkbox" name="k5"/>Kitap Okumak
+            <input type="checkbox" name="k6" checked="on"/>Diğer<br>
+            <label>Gezmek İstediğiniz Şehirler:</label>
+            <select name="gezi" multiple>
+                <option value="34">İstanbul</option>
+                <option value="35">İzmir</option>
+                <option value="36">Kars</option>
+                <option value="37">Kastamonu</option>
+            </select><br>
+            <label>Sevdiğiniz Renk:</label>
+            <input type="color" name="Renk"/><br>
+            <label>Kendinizi Tanıtın:</label><br>
+            <textarea rows="10" cols="200"></textarea>
+            <label>Film Oylaması:</label><br>
+            <label>Tranformers Başlanıç</label>
+            <meter min="0" low="40" high="90" max="100" value="70"></meter>70<br>
+            <label>Recep İvedik 8</label>
+            <meter min="0" low="30" high="40" max="100" value="20"></meter>20<br>
+            <label>Enes Batur: Hayal mi Gerçek mi ?</label>
+            <progress max="70" value="30"></progress>30<br>
+        </fieldset>
+        <button type="submit">Göndermek İçin Tıkla</button>
+    </form>
+</body>
+</html>
