@@ -1,0 +1,19 @@
+div{
+    width: 100vw;
+    margin: 3px;
+}
+#k1{
+    border-radius: 5px;
+    background-color: yellow;
+    height: 10vh;
+}
+#k2{
+    border-radius: 5px;
+    background-color: red;
+    height: 50vh;
+}
+#k3{
+    border-radius: 5px;
+    background-color: purple;
+    height: 20vh;
+}

@@ -1,0 +1,39 @@
+body{
+    background-color:#209420;
+    background-image:url(Resim/aslan.jpeg);
+    background-repeat: no-repeat;
+    /* repeat-x yatayda tekrarla
+    repeat-y dikeyde tekrarla */
+    /*background-size: cover; sayfanin büyüklüğünde resmi genişletir */
+}
+div{
+    width: 100vw;
+    height: 10vh;
+    background-color: blue;
+}
+#kutu1{
+    background-color: blueviolet;
+}
+#kutu2{
+    background-image:linear-gradient( #bbe5ed,#ffee68 );
+}
+#kutu3{
+    background-color: rgba(219, 34, 34 , 0.3);/*rgba yaparsan sondaki opcity oluyo*/
+}
+#kutu4{
+    height: 75vh;
+    background: url(Resim/aslan.jpeg) left top no-repeat,url(Resim/kaplan.jpeg) right bottom no-repeat,url(Resim/çiçek.jpeg) left bottom no-repeat,red;
+}
+#kutu5{
+    font-family: url(https://fonts.google.com/share?selection.family=Oswald:wght@200..700|Playfair+Display:ital,wght@0,400..900;1,400..900);
+    font-size: 2vh;
+    font-style:italic;
+    font-weight: bold;
+    color: azure;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    height: auto;
+    text-indent: 50px;
+    text-overflow: ellipsis;
+}

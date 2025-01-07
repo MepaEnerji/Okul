@@ -1,0 +1,83 @@
+body{
+    overflow-x: hidden;
+}
+#divBaslik{
+    display: flex;
+    width: 100vw;
+    height: 85px;
+}
+#logo{
+    width: 130px;
+    height: 30px;
+    margin-left: 30px;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+.baslik{
+    display: inline-block;
+    margin-right: 50px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 13px;
+    width: 70px;
+}
+#home{
+    color: rgb(176,139,98);
+    margin-left: 120px;
+}
+.baslik p{
+    white-space: nowrap;
+}
+#buyutec img{
+    width: 60%;
+    height: 60%;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+#divContent{
+    width: 100vw;
+    height: 860px;
+    background-image: url(Resimler/ev.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid white;
+}
+#tarih{
+    color: grey;
+    font-size: 20px;
+    width: 350px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+#yer{
+    color: white;
+    font-size: 60px;
+    width: 350px;
+    margin-left: 40px;
+    margin-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#button{
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 160px;
+    height: 50px;
+    margin-left: 50px;
+    padding-left: 20px;
+}
+#yuvarlak{
+    border: 1px solid;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    position: fixed;bottom: 10px;right: 10px;
+}
+#yuvarlak img{
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+}

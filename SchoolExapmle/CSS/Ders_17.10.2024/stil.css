@@ -1,0 +1,79 @@
+div{
+    height: 15vh;
+    border: 0.3vw solid black;
+    flex-grow: 1;
+}
+.k1{
+    background-color: red;
+    border-bottom-color: yellow;
+}
+.k2{
+    background-color: yellow;
+    border-left-color: green;
+}
+.k3{
+    background-color: blue;
+    border-radius: 10px;
+}
+.k4{
+    background-color: teal;
+    border-style: dotted;
+}
+.k5{
+    background-color: green;
+    border-top-style: groove;
+    flex-grow: 3;
+}
+.k6{
+    background-color: blueviolet;
+    border-bottom-style: hidden;
+}
+.k7{
+    background-color: goldenrod;
+    border-right: 10px dashed navy;
+}
+.kapsa{
+    display: flex;
+    border: 0px;
+}
+.kapsa1{
+    margin-top: 15px;
+    display: flex;
+    border: 0px;
+}
+.d1{
+    background-color: aquamarine;
+    border: 5px solid gray;
+    height: 20vh;
+}
+.d2{
+    background-color: aquamarine;
+    border: 5px solid gray;
+    height: 20vh;
+}
+.d3{
+    background-color: aquamarine;
+    border: 5px solid gray;
+    height: 20vh;
+}
+.kapsa2{
+    width: 100vw;
+    margin-bottom: 2vh;
+    border: 0px;
+}
+.z1{
+    height: 10vh;
+    border: 0px;
+    background-color: red;
+}
+.z2{
+    height: 50vh;
+    border: 0px;
+    background-color: gray;
+}
+.z3{
+    height: 5vh;
+    border: 0px;
+    background-color: purple;
+}
+
