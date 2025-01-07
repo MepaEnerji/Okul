@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgerci</title>
+</head>
+<script>
+    function resmiGoster1(){
+        document.getElementById("resim1").style.zIndex=2;
+        document.getElementById("resim2").style.zIndex=1;
+        document.getElementById("resim3").style.zIndex=1;
+    }
+    function resmiGoster2(){
+        document.getElementById("resim1").style.zIndex=1;
+        document.getElementById("resim2").style.zIndex=2;
+        document.getElementById("resim3").style.zIndex=1;
+    }
+    function resmiGoster3(){
+        document.getElementById("resim1").style.zIndex=1;
+        document.getElementById("resim2").style.zIndex=1;
+        document.getElementById("resim3").style.zIndex=2;
+    }
+    function blackMode(){
+        document.getElementsByTagName("body")[0].style.backgroundColor="black";
+    }
+    function whiteMode(){
+        document.getElementsByTagName("body")[0].style.backgroundColor="white";
+    }
+    function yellowMode(){
+        document.getElementsByTagName("body")[0].style.backgroundColor="yellow";
+    }
+    function greenMode(){
+        document.getElementsByTagName("body")[0].style.backgroundColor="green";
+    }
+    function mainMode(){
+        document.getElementsByTagName("body")[0].style.backgroundColor="bisque";
+    }
+    function hesapla() {
+        var urun1Adet = parseInt(document.getElementById("urun1Adet").value) || 0;
+        var urun1Fiyat = parseFloat(document.getElementById("urun1Fiyat").value) || 0;
+
+        var urun2Adet = parseInt(document.getElementById("urun2Adet").value) || 0;
+        var urun2Fiyat = parseFloat(document.getElementById("urun2Fiyat").value) || 0;
+
+        var toplam1 = urun1Adet * urun1Fiyat;
+        var toplam2 = urun2Adet * urun2Fiyat;
+
+        var toplam = toplam1 + toplam2;
+        var kdv = (toplam / 120) * 20;
+
+        document.getElementById("kdvSonuc").innerText = "KDV (20%): " + kdv.toFixed(2) + " TL";
+        document.getElementById("tutarSonuc").innerText = "Toplam Tutar: " + toplam.toFixed(2) + " TL";
+    }
+</script>
+<style>
+    body{
+        background-color: bisque;
+    }
+    #logo{
+        display: flex;
+        color: brown;
+        font-size: 20px;
+    }
+    #logo img{
+        padding-top: 10px;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    #navbar{
+        display: flex;
+        color: red;
+        width: 95vw;
+        background-color: white;
+        border-radius: 15px;
+        font-size: 17px;
+        margin-bottom: -30px;
+        margin-left: 15px;
+    }
+    .navbaritem{
+        margin-right: 10px;
+        border-radius: 15px;
+    }
+    #buttons{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .butonlar{
+        background-color: darkseagreen;
+        border-radius: 15px;
+        font-size: 15px;
+        width: 70px;
+        height: 40px;
+    }
+    #resim{
+        position: relative;
+        width: 95vw;
+        height: 300px;
+        margin-left: 15px;
+    }
+    #resim img{
+        position: absolute;left: 0px;right: 0px;
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+    }
+    #alt{
+        background-color: navy;
+        color: white;
+        width: 100%;
+        height: 100px;
+        font-size: 25px;
+    }
+    #alt img{
+        width: 40px;
+        height: 40px;
+    }
+    #altbolum{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    #renkbutonlar{
+        display: flex;
+        padding-left: 74vw;
+        padding-top: 10px;
+    }
+    .renkbutonlarbuton{
+        width: 20px;
+        height: 20px;
+    }
+    .siparis-formu {
+        margin-top: 30px;
+        background-color: white;
+        padding: 20px;
+    }
+    .siparis-formu input {
+        margin: 10px;
+        border-radius: 5px;
+        width: 150px;
+    }
+    .siparis-formu button {
+        background-color: darkseagreen;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        border: 2px solid;
+    }
+    .siparis-formu button:hover {
+        background-color: bisque;
+    }
+    .sonuc {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .content{
+        width: 95vw;
+        height: 300px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        background-color: white;
+        border-radius: 15px;
+        margin-left: 15px;
+    }
+    .content h2{
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+</style>
+<body>
+    <div id="kapsa">
+        <div id="logo">
+            <img src="Hamburgerperen/logo.png"><p>HAMBURGER</p>
+            <div id="renkbutonlar">
+                <button onmousemove="blackMode()" style="background-color: black;" class="renkbutonlarbuton"></button>
+                <button onmousemove="whiteMode()" style="background-color: white;" class="renkbutonlarbuton"></button>
+                <button onmousemove="yellowMode()" style="background-color: yellow;" class="renkbutonlarbuton"></button>
+                <button onmousemove="greenMode()" style="background-color: green;" class="renkbutonlarbuton"></button>
+                <button onmousemove="mainMode()" style="background-color: bisque;" class="renkbutonlarbuton"></button>
+            </div>
+        </div>
+        <div id="resim">
+            <img src="Hamburgerperen/hamburger-01.jpg" id="resim1">
+            <img src="Hamburgerperen/hamburger-02.jpg" id="resim2">
+            <img src="Hamburgerperen/hamburger-03.jpg" id="resim3">
+        </div>
+        <div id="buttons">
+            <button class="butonlar" onmousemove="resmiGoster1()">Menü-1</button>
+            <button class="butonlar" onmousemove="resmiGoster2()">Menü-2</button>
+            <button class="butonlar" onmousemove="resmiGoster3()">Menü-3</button>
+        </div>
+        <div id="navbar">
+            <div class="navbaritem" style="margin-left: 10px;"><p>Ana Sayfa</p></div>
+            <div class="navbaritem"><p>Ürünler</p></div>
+            <div class="navbaritem"><p>İletişim</p></div>
+        </div>
+        <div class="content">
+            <h2>Ürün Sipariş Formu</h2>
+            <div class="siparis-formu">
+                <label for="urun1Adet">1. Ürün Adet:</label>
+                <input type="number" id="urun1Adet" placeholder="Adet" />
+                <label for="urun1Fiyat">1. Ürün Fiyat:</label>
+                <input type="number" id="urun1Fiyat" placeholder="Fiyat" />
+    
+                <br>
+    
+                <label for="urun2Adet">2. Ürün Adet:</label>
+                <input type="number" id="urun2Adet" placeholder="Adet" />
+                <label for="urun2Fiyat">2. Ürün Fiyat:</label>
+                <input type="number" id="urun2Fiyat" placeholder="Fiyat" />
+    
+                <button onclick="hesapla()">Hesapla</button>
+    
+                <div class="sonuc">
+                    <p id="kdvSonuc">KDV (20%): 0 TL</p>
+                    <p id="tutarSonuc">Toplam Tutar: 0 TL</p>
+                </div>
+            </div>
+        </div>
+        <div id="alt">
+            <div id="altbolum"><p>🍔HAMBURGER</p></div>
+        </div>
+    </div>
+</body>
+</html>
