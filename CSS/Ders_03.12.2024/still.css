@@ -1,0 +1,24 @@
+#dondur{
+    transform: rotate(10deg);
+    margin-top: 200px;
+}
+#uzat{
+    transform: skewY(20deg);
+    margin-top: 400px;
+}
+#buyut{
+    margin-top: 300px;
+    transform: scale(1,2);
+}
+.galeri{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.galeri img{
+    max-width: 15vw;
+    transition: all 2s;
+}
+.galeri img:hover{
+    background-color: red;
+    transform: scale(2,2);
+}

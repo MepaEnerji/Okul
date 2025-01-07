@@ -1,0 +1,51 @@
+/*div{
+    border: 0px;
+    background-color: gray;
+}
+.kapsa1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d1{
+    background-color: aquamarine;
+    border: 5px solid gray;
+    height: 20vh;
+    width: 23vw;
+    flex-grow: 1;
+}
+.kapsa2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d2{
+    background-color: aquamarine;
+    border: 5px solid gray;
+    height: 20vh;
+    width: 23vw;
+    flex-grow: 1;
+}
+.kapsa3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d3{
+    background-color: aquamarine;
+    border: 5px solid gray;
+    height: 5vh;
+    width: 23vw;
+    flex-grow: 1;
+}
+#ayrik{
+    background-color: gray;
+}ben böyle yaptım*/
+#kapsayici{
+    background-color: gray;
+    display: grid;
+    grid-template-columns: auto auto auto auto;/*genişlik*/
+    grid-template-rows: 25vh 25vh 5vh;/*yükseklik*/
+    gap: 1vw;
+    padding: 10px;
+}
+#kapsayici div{
+    background-color: aquamarine;
+}
